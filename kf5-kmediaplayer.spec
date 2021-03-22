@@ -1,15 +1,15 @@
-%define		kdeframever	5.79
+%define		kdeframever	5.80
 %define		qtver		5.9.0
 %define		kfname		kmediaplayer
 #
 Summary:	Interface for media player KParts
 Name:		kf5-%{kfname}
-Version:	5.79.0
+Version:	5.80.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/portingAids/%{kfname}-%{version}.tar.xz
-# Source0-md5:	3c20d76012b40f047c2ebcb9fdfa23fe
+# Source0-md5:	251312d56df3f1c13958633f8c656567
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= 5.2.0
 BuildRequires:	Qt5DBus-devel >= 5.2.0
@@ -99,7 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README.md
-%attr(755,root,root) %ghost %{_libdir}/libKF5MediaPlayer.so.5
+%ghost %{_libdir}/libKF5MediaPlayer.so.5
 %attr(755,root,root) %{_libdir}/libKF5MediaPlayer.so.*.*.*
 %{_datadir}/dbus-1/interfaces/kf5_org.kde.KMediaPlayer.xml
 %{_datadir}/kservicetypes5/kmediaplayer-engine.desktop
@@ -110,4 +110,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/KF5/KMediaPlayer
 %{_includedir}/KF5/kmediaplayer_version.h
 %{_libdir}/cmake/KF5MediaPlayer
-%attr(755,root,root) %{_libdir}/libKF5MediaPlayer.so
+%{_libdir}/libKF5MediaPlayer.so
