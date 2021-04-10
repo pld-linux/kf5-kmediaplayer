@@ -1,15 +1,15 @@
-%define		kdeframever	5.80
+%define		kdeframever	5.81
 %define		qtver		5.9.0
 %define		kfname		kmediaplayer
 #
 Summary:	Interface for media player KParts
 Name:		kf5-%{kfname}
-Version:	5.80.0
+Version:	5.81.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/frameworks/%{kdeframever}/portingAids/%{kfname}-%{version}.tar.xz
-# Source0-md5:	251312d56df3f1c13958633f8c656567
+# Source0-md5:	8851332110d3e5508083191f7e03d612
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= 5.2.0
 BuildRequires:	Qt5DBus-devel >= 5.2.0
