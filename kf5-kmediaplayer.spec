@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	5.112
+%define		kdeframever	5.113
 %define		qtver		5.15.2
 %define		kfname		kmediaplayer
 #
 Summary:	Interface for media player KParts
 Name:		kf5-%{kfname}
-Version:	5.112.0
+Version:	5.113.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/portingAids/%{kfname}-%{version}.tar.xz
-# Source0-md5:	b0854e0d462bdd064fc4aa3ca135ce2e
+# Source0-md5:	240fc62077d2d7605e057a3a3e883317
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= 5.2.0
 BuildRequires:	Qt5DBus-devel >= 5.2.0
